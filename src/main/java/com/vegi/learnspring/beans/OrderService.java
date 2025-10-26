@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-//@Service
+@Service
 public class OrderService {
 
     private final OrderRepository orderRepository;
@@ -16,6 +16,7 @@ public class OrderService {
     }
 
     public List<String> getCustomerOrders(Long id){
+        System.out.println("OrderService: "+customerRepository.hashCode());
         return List.of();
     }
 
