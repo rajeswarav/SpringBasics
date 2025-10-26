@@ -51,7 +51,7 @@ public class JdbcDemo {
 
     private Connection getConnection() {
         Connection conn = null;
-        conn = DriverManager.getConnection();
+        //conn = DriverManager.getConnection(null);
         return conn;
     }
 }
